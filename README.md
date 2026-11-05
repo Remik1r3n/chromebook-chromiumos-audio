@@ -20,38 +20,42 @@ Currently experimental, back up important data and keep a recovery method availa
 Note: This uses a prebuilt audio pack. If that pack doesn't work for you, scroll down to make yours first.
 
 1. Launch a local root shell.
-After enabling Developer Mode, you can launch a local shell with crosh (Ctrl+Alt+T, then type `shell`) or with VT-2 shell (Ctrl+Alt+F2). 
 
-After you get a local `chronos` shell, you can use `sudo -i` to get a root shell.
+   After enabling Developer Mode, you can launch a local shell with crosh (Ctrl+Alt+T, then type `shell`) or with VT-2 shell (Ctrl+Alt+F2). 
+
+   Once you get a local `chronos` shell, you can use `sudo -i` to get a root shell.
 
 2. Set the root filesystem writable.
-* For FydeOS, see https://fydeos.com/help/knowledge-base/developer-options/developer-mode/disable-rootfs-verification/.
-* For other ChromiumOS-based system, see https://www.chromium.org/chromium-os/developer-library/guides/device/developer-mode/.
 
-Once you have disabled rootfs verification, reboot.
+   * For FydeOS, see https://fydeos.com/help/knowledge-base/developer-options/developer-mode/disable-rootfs-verification/.
+   * For other ChromiumOS-based system, see https://www.chromium.org/chromium-os/developer-library/guides/device/developer-mode/.
 
-Then you can run `mount -o rw,remount /` to make changes to your system. Test it with `touch /etc/testfile; rm /etc/testfile`.
+   Once you have disabled rootfs verification, reboot.
 
-If you didn't see any error message, you're now good to go ahead.
+   Then you can run `mount -o rw,remount /` to make changes to your system. Test it with `touch /etc/testfile; rm /etc/testfile`.
+
+   If you didn't see any error message, you're now good to go ahead.
 
 3. Get the script.
-Download the repo as a zip in Chrome and unzip it in the Files app. Use `cd /home/chronos/user/MyFiles/Downloads` to enter Downloads directory, and find the script files directory.
 
-Type `ls`, if you see all the scripts, continue.
+   Download the repo as a zip in Chrome and unzip it in the Files app. Use `cd /home/chronos/user/MyFiles/Downloads` to enter Downloads directory, and find the script files directory.
+
+   Type `ls`, if you see all the scripts, continue.
 
 4. Run the script!
-```sh
-sudo bash ./setup_audio.sh --pack ./packs/hatch-audio-pack.tar.gz --apply
-```
-Run the audio setup script like that. Change the path arguments when needed.
 
-You can save the output just in case we need it.
+   ```sh
+   sudo bash ./setup_audio.sh --pack ./packs/hatch-audio-pack.tar.gz --apply
+   ```
+   Run the audio setup script like that. Change the path arguments when needed.
 
-Then reboot and check if audio works now! 
+   You can save the output just in case we need it.
 
-If it's not: 
-* Try to make your audio pack instead of use ours.
-* File an issue with the diagnostic output described below.
+   Then reboot and check if audio works now! 
+
+   If it's not: 
+   * Try to make your audio pack instead of use ours.
+   * File an issue with the diagnostic output described below.
 
 ## Make an audio pack
 An audio pack is some files extracted from official ChromeOS firmware to make sound card working.
