@@ -1,5 +1,7 @@
 # Chromebook ChromiumOS Audio
 
+[阅读中文文档](README_zh.md)
+
 Enable/fix audio support on Chrome devices running ChromiumOS-based systems (FydeOS, openFyde, ChromeOS Flex, CloudReady, etc.)
 
 Currently experimental, back up important data and keep a recovery method available. Reports of any issues are welcome!
