@@ -27,8 +27,8 @@
 
 2. 将根文件系统设为可写。
 
-   * 对于 FydeOS，请参见 https://fydeos.com/help/knowledge-base/developer-options/developer-mode/disable-rootfs-verification/。
-   * 对于其他基于 ChromiumOS 的系统，请参见 https://www.chromium.org/chromium-os/developer-library/guides/device/developer-mode/。
+   * 对于 FydeOS，请参见 https://fydeos.com/help/knowledge-base/developer-options/developer-mode/disable-rootfs-verification/
+   * 对于其他基于 ChromiumOS 的系统，请参见 https://www.chromium.org/chromium-os/developer-library/guides/device/developer-mode/
 
    禁用 rootfs 验证后，重启。
 
